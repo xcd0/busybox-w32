@@ -1,7 +1,9 @@
-name: Update 
+name: Update
+
 on:
   schedule:
-    - cron:  '0 0 * * *' # 毎日UTC 0時に実行します。
+    - cron: '0 0 * * *' # 毎日UTC 0時に実行します。
+  workflow_dispatch: # この行を追加して手動トリガーを許可します。
 
 jobs:
   update-repo:
