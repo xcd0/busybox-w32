@@ -20,8 +20,8 @@ jobs:
         git config --global user.email "github-action@example.com"
         git config --global user.name "github-action"
 
-    - name: Execute update.sh script
-      run: bash update.sh
+    - name: Execute update_json.sh script
+      run: bash update_json.sh
 
     - name: Commit and push changes
       run: |
